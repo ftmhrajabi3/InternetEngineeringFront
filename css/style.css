@@ -3,6 +3,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   color: #fff;
+  overflow: auto;
 }
 
 body {
@@ -28,7 +29,6 @@ header {
   align-items: center;
   align-content: center;
   position: relative;
-  width: 97vw;
   height: 72vh;
   margin: 2vh;
 }
@@ -114,9 +114,24 @@ a {
 }
 
 .lecture {
+  flex-direction: row;
   background-image: url("/img/Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(74, 74, 140, 0.6);
   background-blend-mode: exclusion;
+  border: 2px solid red;
+  justify-content: space-around;
+}
+
+.lectureCard {
+  position: relative;
+  border: 2px solid red;
+  width: 20vw;
+  height: 60vh;
+  background-color: rgba(225, 225, 225, 0.7);
+}
+
+.lectureCard img {
+  height: 15vh;
 }
