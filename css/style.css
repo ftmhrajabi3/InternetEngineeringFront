@@ -120,18 +120,35 @@ a {
   background-size: cover;
   background-color: rgba(74, 74, 140, 0.6);
   background-blend-mode: exclusion;
-  border: 2px solid red;
   justify-content: space-around;
 }
 
 .lectureCard {
+  border-radius: 2px;
   position: relative;
-  border: 2px solid red;
   width: 20vw;
   height: 60vh;
   background-color: rgba(225, 225, 225, 0.7);
+  text-align: center;
+  z-index: 4;
+  box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+  padding: 20px;
+  letter-spacing: 1px;
+}
+.lectureCard:hover {
+  background-color: #1e1f26;
+  color: #fff;
+  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
 }
 
 .lectureCard img {
   height: 15vh;
+  filter: invert(1);
+  display: block;
+  margin: auto;
+}
+
+.lectureCard p {
+  font-size: 18px;
+  padding: 20px;
 }
