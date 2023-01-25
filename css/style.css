@@ -39,11 +39,14 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.headerBackground {
   background-image: url("/img/Header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(0, 58, 200, 0.1);
-  background-blend-mode: multiply;
+  background-color: rgba(74, 74, 140, 0.6);
+  background-blend-mode: exclusion;
 }
 
 header h1 {
@@ -108,4 +111,12 @@ a {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.lecture {
+  background-image: url("/img/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(74, 74, 140, 0.6);
+  background-blend-mode: exclusion;
 }
