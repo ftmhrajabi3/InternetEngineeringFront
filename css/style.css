@@ -42,7 +42,7 @@ header {
 }
 
 .headerBackground {
-  background-image: url("/img/Header.jpg");
+  background-image: url("../img/Header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(74, 74, 140, 0.6);
@@ -115,7 +115,7 @@ a {
 
 .lecture {
   flex-direction: row;
-  background-image: url("/img/Background.jpg");
+  background-image: url("../img/Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(74, 74, 140, 0.6);
