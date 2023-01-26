@@ -132,7 +132,7 @@ a {
   text-align: center;
   z-index: 4;
   box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
-  padding: 20px;
+  padding: 2vw;
   letter-spacing: 1px;
 }
 .lectureCard:hover {
@@ -151,4 +151,36 @@ a {
 .lectureCard p {
   font-size: 18px;
   padding: 20px;
+  height: 30vh;
+  overflow: auto;
+}
+
+.relatedBooks {
+  background-color: #f6f6f6;
+}
+
+footer.container {
+  background-color: #333333;
+  height: 30vh;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer.container div {
+  z-index: 4;
+  border-top: 2px #3d3d3d solid;
+  width: auto;
+  height: 10vh;
+  position: relative;
+  padding: 0.5vh 1vw;
+  color: #aeb8bf;
+}
+
+footer.container div a {
+  padding: 1vw;
+  color: #aeb8bf;
+}
+
+footer.container div p {
+  margin-top: 0;
 }
