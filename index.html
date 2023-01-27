@@ -20,7 +20,16 @@
       </h2>
       <a href="#" class="btn">RELATED BOOKS</a>
     </header>
-    <nav></nav>
+    <nav class="pop-up" id="menu">
+      <div class="pop-up__content">
+        <a class="pop-up__close" href="#books">x</a>
+      </div>
+      <ol>
+        <li>START</li>
+        <li>LECTURES</li>
+        <li>BOOKS</li>
+      </ol>
+    </nav>
     <section class="container lecture">
       <div class="lectureCard">
         <img src="img/http_icon.png" alt="HTTP icon" />
@@ -54,66 +63,72 @@
     <section class="container relatedBooks">
       <h1>MOST POPULAR BOOKS</h1>
       <div class="container bookCards" id="books">
-        <div class="wrapper">
-          <div class="front">
-            <div
-              class="head"
-              style="background-image: url('img/Book1-2.png')"
-            ></div>
-            <div class="blue"></div>
-            <mark class="logo">JAVASCRIPT<br />GUIDE</mark>
-            <div class="content">
-              <p>By Writer</p>
-              <p>Xth Edition</p>
-              <p>Published at 2020</p>
+        <div class="flip-card">
+          <div class="wrapper">
+            <div class="front">
+              <div
+                class="head"
+                style="background-image: url('img/Book1-2.png')"
+              ></div>
+              <div class="blue"></div>
+              <mark class="logo">JAVASCRIPT<br />GUIDE</mark>
+              <div class="content">
+                <p>By Writer</p>
+                <p>Xth Edition</p>
+                <p>Published at 2020</p>
+              </div>
             </div>
-          </div>
-          <div class="back">
-            <div class="content">
-              <p>Price: $X</p>
-              <a href="#pop-up" style="z-index: 3">more...</a>
-            </div>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="front">
-            <div
-              class="head"
-              style="background-image: url('img/Book2-2.jpg')"
-            ></div>
-            <div class="blue"></div>
-            <mark class="logo">ROAD TO<br />REACT</mark>
-            <div class="content">
-              <p>By Writer</p>
-              <p>Xth Edition</p>
-              <p>Published at 2020</p>
-            </div>
-          </div>
-          <div class="back">
-            <div class="content">
-              <p>Price: $X</p>
-              <a href="">more...</a>
+            <div class="back">
+              <div class="content">
+                <p>Price: $X</p>
+                <a href="#pop-up" style="z-index: 3">more...</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="wrapper">
-          <div class="front">
-            <div
-              class="head"
-              style="background-image: url('img/Book3-2.png')"
-            ></div>
-            <div class="blue"></div>
-            <mark class="logo">INTRODUCING<br />GO</mark>
-            <div class="content">
-              <p>By Writer</p>
-              <p>Xth Edition</p>
-              <p>Published at 2020</p>
+        <div class="flip-card">
+          <div class="wrapper">
+            <div class="front">
+              <div
+                class="head"
+                style="background-image: url('img/Book2-2.jpg')"
+              ></div>
+              <div class="blue"></div>
+              <mark class="logo">ROAD TO<br />REACT</mark>
+              <div class="content">
+                <p>By Writer</p>
+                <p>Xth Edition</p>
+                <p>Published at 2020</p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <p>Price: $X</p>
+                <a href="">more...</a>
+              </div>
             </div>
           </div>
-          <div class="back">
-            <div class="content">
-              <p>Price: $X</p>
-              <a href="">more...</a>
+        </div>
+        <div class="flip-card">
+          <div class="wrapper">
+            <div class="front">
+              <div
+                class="head"
+                style="background-image: url('img/Book3-2.png')"
+              ></div>
+              <div class="blue"></div>
+              <mark class="logo">INTRODUCING<br />GO</mark>
+              <div class="content">
+                <p>By Writer</p>
+                <p>Xth Edition</p>
+                <p>Published at 2020</p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="content">
+                <p>Price: $X</p>
+                <a href="">more...</a>
+              </div>
             </div>
           </div>
         </div>
