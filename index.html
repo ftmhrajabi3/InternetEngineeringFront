@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="container headerBackground">
+    <header class="container headerBackground" id="start">
       <h1 class="text-animation">
         INTERNET<br />
         ENGINEERING
@@ -19,19 +19,21 @@
         LEARN IN THIS COURSE
       </h2>
       <a href="#" class="btn">RELATED BOOKS</a>
-      <a href="#menu" class="btn burger-menu">=</a>
+      <a href="#menu" class="btn burger-menu"
+        ><img src="/img/menu.png" alt="icon"
+      /></a>
     </header>
     <nav class="pop-up" id="menu">
-      <div class="pop-up__content">
+      <div class="pop-up__content pop-up__menu">
         <ol>
-          <li>START</li>
-          <li>LECTURES</li>
-          <li>BOOKS</li>
+          <li><a href="#start">START</a></li>
+          <li><a href="#lectureSec">LECTURES</a></li>
+          <li><a href="#books">BOOKS</a></li>
         </ol>
-        <a class="pop-up__close" href="#books">x</a>
+        <a class="pop-up__close" href="#">x</a>
       </div>
     </nav>
-    <section class="container lecture">
+    <section class="container lecture" id="lectureSec">
       <div class="lectureCard">
         <img src="img/http_icon.png" alt="HTTP icon" />
         <h1>HTTP</h1>
