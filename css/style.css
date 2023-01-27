@@ -68,7 +68,7 @@ header h2 {
   letter-spacing: 0.7em;
   font-family: "ROBOTO", sans-serif;
   font-weight: 300;
-  z-index: 4;
+  z-index: 1;
 }
 
 a {
@@ -94,7 +94,7 @@ a {
   background-color: #fff;
   color: #1e1f26;
   box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
-  z-index: 4;
+  z-index: 1;
 }
 .btn:hover {
   background-color: #1e1f26;
@@ -135,7 +135,7 @@ a {
   height: 60vh;
   background-color: rgba(225, 225, 225, 0.7);
   text-align: center;
-  z-index: 4;
+  z-index: 1;
   box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
   padding: 2vw;
   letter-spacing: 1px;
@@ -168,7 +168,7 @@ footer.container {
 }
 
 footer.container div {
-  z-index: 4;
+  z-index: 1;
   border-top: 2px #3d3d3d solid;
   width: auto;
   height: 10vh;
@@ -209,6 +209,7 @@ footer.container div p {
   position: relative;
   border-radius: 3px;
   overflow: hidden;
+  transition: all 2s ease;
 }
 
 .front,
@@ -220,7 +221,6 @@ footer.container div p {
   width: 100%;
   backface-visibility: hidden;
   overflow: hidden;
-  transition: all 2s ease;
   box-shadow: rgb(31 31 31 / 12%) 0px 1px 6px, rgb(31 31 31 / 12%) 0px 1px 4px;
 }
 
@@ -232,6 +232,7 @@ footer.container div p {
 .wrapper:hover .front {
   transform: rotateY(180deg);
 }
+
 .wrapper:hover .back {
   transform: rotateY(0);
 }
@@ -281,6 +282,7 @@ footer.container div p {
   font-weight: normal;
   line-height: 1.5rem;
   text-align: left;
+  z-index: 1;
 }
 
 .content a {
@@ -295,8 +297,8 @@ footer.container div p {
 }
 
 .pop-up {
-  position: absolute;
-  height: 100vh;
+  position: fixed;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   top: 0;
@@ -304,26 +306,24 @@ footer.container div p {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
-
   display: flex;
   align-items: center;
   justify-content: center;
-} /* Background */
+  z-index: 5;
+}
 
 .pop-up:target {
   visibility: visible;
   opacity: 1;
-} /* */
+}
 
 .pop-up__content {
-  height: 300px;
+  height: 30vh;
   width: 75%;
   background-color: #828489;
   border-radius: 8px;
-
   transform: scale(0.5);
   transition: all 0.5s;
-
   position: relative;
 }
 
@@ -335,7 +335,6 @@ footer.container div p {
   position: absolute;
   top: 10px;
   right: 20px;
-
   color: #d0efb1;
   font-size: 25px;
   font-weight: 700;

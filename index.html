@@ -53,7 +53,7 @@
     </section>
     <section class="container relatedBooks">
       <h1>MOST POPULAR BOOKS</h1>
-      <div class="container bookCards">
+      <div class="container bookCards" id="books">
         <div class="wrapper">
           <div class="front">
             <div
@@ -66,16 +66,16 @@
               <p>By Writer</p>
               <p>Xth Edition</p>
               <p>Published at 2020</p>
-              <a href="">more...</a>
             </div>
           </div>
           <div class="back">
             <div class="content">
               <p>Price: $X</p>
+              <a href="#pop-up" style="z-index: 3">more...</a>
             </div>
           </div>
         </div>
-        <div class="wrapper buttun">
+        <div class="wrapper">
           <div class="front">
             <div
               class="head"
@@ -92,10 +92,11 @@
           <div class="back">
             <div class="content">
               <p>Price: $X</p>
+              <a href="">more...</a>
             </div>
           </div>
         </div>
-        <div class="wrapper buttun">
+        <div class="wrapper">
           <div class="front">
             <div
               class="head"
@@ -112,12 +113,21 @@
           <div class="back">
             <div class="content">
               <p>Price: $X</p>
+              <a href="">more...</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="pop-up"></section>
+    <section class="pop-up" id="pop-up">
+      <div class="pop-up__content">
+        <div class="container">
+          <img src="/img/Book1-1.jpg" alt="Book Picture" />
+          <div class="infoProduct"></div>
+        </div>
+        <a class="pop-up__close" href="#books">x</a>
+      </div>
+    </section>
     <footer class="container">
       <div>
         <a href="">CLASS INFO</a>
