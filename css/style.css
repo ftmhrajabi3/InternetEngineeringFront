@@ -291,17 +291,6 @@ footer.container div p {
   z-index: 1;
 }
 
-.content a {
-  color: black;
-  border-radius: 100px;
-  background-color: #9e90a2;
-  cursor: pointer;
-  width: 3vw;
-  height: 3vh;
-  display: inline-block;
-  padding: 0.5vw;
-}
-
 .pop-up {
   position: fixed;
   height: 100%;
@@ -324,13 +313,38 @@ footer.container div p {
 }
 
 .pop-up__content {
-  height: 30vh;
+  height: 75%;
   width: 75%;
-  background-color: #828489;
+  background-color: #fff;
   border-radius: 8px;
   transform: scale(0.5);
   transition: all 0.5s;
-  position: relative;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-up__content img {
+  display: inline-block;
+}
+
+.infoProduct {
+  margin: 1vw;
+}
+
+.infoProduct h1 {
+  color: #103adf;
+}
+
+.infoProduct h2 {
+  font-size: medium;
+  color: #828489;
+}
+
+.side-text {
+  display: flex;
+  flex-direction: row;
+  color: #1e1f26;
 }
 
 .pop-up:target .pop-up__content {
@@ -341,9 +355,12 @@ footer.container div p {
   position: absolute;
   top: 10px;
   right: 20px;
-  color: #d0efb1;
+  color: #3d3d3d;
   font-size: 25px;
   font-weight: 700;
+}
+
+.burger-menu {
 }
 
 #menu {
